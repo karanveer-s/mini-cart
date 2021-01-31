@@ -6,6 +6,7 @@ import Details from './components/Details';
 import ProductList from './components/ProductList';
 import Cart from './components/Cart/Cart';
 import Default from './components/Default';
+import Form from './components/Cart/Form'
 
 import './App.css';
 
@@ -19,6 +20,7 @@ class App extends Component {
           <Route  exact path="/" component={ProductList}/>
           <Route path="/Details" component={Details}/>
           <Route path="/Cart" component={Cart}/>
+          <Route path="/form" component={Form}/>
           <Route  component={Default}/>
         </Switch>
         

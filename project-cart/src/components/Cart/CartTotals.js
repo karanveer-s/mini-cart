@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import form from './Form'
 
 
 export default function CartTotals({value}) {
@@ -32,6 +33,11 @@ export default function CartTotals({value}) {
                             </span>
                             <strong>Rs {cartTotal}</strong>
                         </h5>
+                        <Link to="/form">
+                            <button className="btn btn-outline-primary text-uppercase mb-3 px-5" type="button" >
+                                check out
+                            </button>
+                        </Link>
                    </div>
                </div>
            </div>
